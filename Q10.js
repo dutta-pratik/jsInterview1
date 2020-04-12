@@ -4,19 +4,23 @@ function LinkedList() {
     let length = 0; 
     let head = null; 
   
+    //Create new Node
     let Node = function(data){
       this.data = data; 
       this.next = null; 
     }; 
   
+    //Return size
     this.size = function(){
       return length;
     };
   
+    //Return head
     this.head = function(){
       return head;
     };
   
+    // Adding data in LL
     this.add = function(data){
       let node = new Node(data);
       if(head === null){
