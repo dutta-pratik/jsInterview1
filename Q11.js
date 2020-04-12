@@ -33,13 +33,14 @@ let Stack = function() {
         return this.values[this.count-1];
     }
 }
-
+  //----------INITIALISING STACK----------------//
 let newStack = new Stack();
-
+  //--------PUSHING ELEMENT TO STACK-----------//
 newStack.push(1);
 newStack.push(2);
 newStack.push(3);
 newStack.push(4);
+  //----------LOGGING THE DATA----------------//
 console.log(newStack.peek());
 console.log(newStack.pop());
 console.log(newStack.peek());
